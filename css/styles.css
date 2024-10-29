@@ -37,7 +37,7 @@ body {
 }
 
 .carousel-item {
-    height: 100vh; /* Asegura que cada item ocupe toda la altura */
+    height: 100vh; /* cada item ocupa toda la altura */
 }
 
 .carousel-item img {
@@ -179,7 +179,7 @@ form {
 .seccion-portadas {
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Opcional: para centrar también verticalmente */
+    align-items: center; /* centra verticalmente */
     text-align: center;
     flex-wrap: wrap;
     gap: 2px;
@@ -215,6 +215,7 @@ label {
 }
 
 input, textarea {
+    padding-left: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
     width: 100%;
@@ -261,14 +262,14 @@ footer {
     .cajas-contacto {
         max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
         width: 100%; /* Asegura que use el 100% del espacio disponible */
-        padding: 20px; /* Opcional: agrega más espacio interno */
+        padding: 20px; /* agrega más espacio interno */
     }
 
     #formulario-contacto {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
-        margin: auto; /* Centramos el formulario */
+        margin: auto; /* Centra el formulario */
         width: 100%; /* Aumenta el ancho del formulario */
         padding: 20px; /* Agrega más espacio alrededor del formulario */
     }
@@ -347,7 +348,7 @@ footer {
     }
 
     .cajas-contacto {
-        max-width: 700px; /* Aumenta el tamaño máximo de la caja del formulario */
+        max-width: 700px; 
     }
 
     textarea {
