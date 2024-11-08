@@ -99,8 +99,7 @@ h1 {
 }
 
 h3 {
-    color: $color-white;
-    margin: 30px;
+    @extend h4;
     font-size: 2em;
     text-transform: uppercase;
 }
