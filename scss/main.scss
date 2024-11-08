@@ -8,15 +8,29 @@ body {
     font-family: "Roboto", system-ui;
     font-weight: 300;
     font-style: normal;
-}   
-
-.navbar.bg-body-tertiary {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgba(255, 255, 255, 0)) !important;
 }
 
-.navbar-nav {
-    padding-top: 1em;
-}
+.navbar {
+    &.bg-body-tertiary {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgba(255, 255, 255, 0)) !important;
+    }
+  
+    &-nav {
+      padding-top: 1em;
+    }
+  
+    &-toggler {
+      width: 60px;
+      height: 40px;
+      filter: invert(1);
+      border: none;
+  
+      &-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 
 .nav-link{
     color: white;
@@ -44,18 +58,6 @@ body {
             height: 100%;
         }
     }
-}
-
-.navbar-toggler {
-    width: 60px; /* Ajusta el tamaño del botón */
-    height: 40px;
-    filter: invert(1);
-    border: none;
-}
-
-.navbar-toggler-icon {
-    width: 100%; /* Ajusta el tamaño del ícono dentro del botón */
-    height: 100%;
 }
 
 .imagen-logo {

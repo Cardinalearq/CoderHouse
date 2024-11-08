@@ -14,9 +14,18 @@ body {
 .navbar.bg-body-tertiary {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.938), rgba(255, 255, 255, 0)) !important;
 }
-
 .navbar-nav {
   padding-top: 1em;
+}
+.navbar-toggler {
+  width: 60px;
+  height: 40px;
+  filter: invert(1);
+  border: none;
+}
+.navbar-toggler-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .nav-link {
@@ -41,18 +50,6 @@ body {
 .carousel .carousel-item img {
   object-fit: cover; /* Cubre el área del carrusel */
   width: 100%;
-  height: 100%;
-}
-
-.navbar-toggler {
-  width: 60px; /* Ajusta el tamaño del botón */
-  height: 40px;
-  filter: invert(1);
-  border: none;
-}
-
-.navbar-toggler-icon {
-  width: 100%; /* Ajusta el tamaño del ícono dentro del botón */
   height: 100%;
 }
 
