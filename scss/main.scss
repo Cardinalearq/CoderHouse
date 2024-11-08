@@ -1,3 +1,7 @@
+$color-white: white;
+$color-black: black;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -33,10 +37,10 @@ body {
   }
 
 .nav-link{
-    color: white;
+    color: $color-white;
 
     &:hover{
-        color: white !important;
+        color: $color-white !important;
         font-size: 1.2em;
     }
 }
@@ -82,7 +86,7 @@ section {
 
 h1 {
     font-size: 45px;
-    color: white; 
+    color: $color-white; 
     text-align: center;
     vertical-align: middle;
     padding-bottom: 30px;
@@ -95,46 +99,46 @@ h1 {
 }
 
 h3 {
-    color: white;
+    color: $color-white;
     margin: 30px;
     font-size: 2em;
     text-transform: uppercase;
 }
 
 h4 {
-    color: white;
+    color: $color-white;
     margin: 30px;
 }
 
 h5 {
-    color: white;
+    color: $color-white;
     margin: 10px;
 }
 
 h6 {
-    color: white;
+    color: $color-white;
     margin: 30px;
     font-size: 15px;
 }
 
 p {
-    color: black;
+    color: $color-black;
     margin: 10px; 
     font-weight: 400;
 }
 
 #enlaces-contacto > a {
-    color: white;
+    color: $color-white;
     text-decoration: none;
     padding: 10px;
 }
 
 form {
-    color: white;
+    color: $color-white;
 }
 
 .titulos-portadas {
-    color: black !important;
+    color: $color-black !important;
     font-size: 20px;
     display: block;
 }
@@ -157,7 +161,7 @@ form {
 }
 
 .titulos-portadas {
-    color: white; 
+    color: $color-white; 
     font-size: 20px; 
     margin: 10px 0; 
 }
@@ -213,7 +217,7 @@ form {
 label {
     font-weight: bold;
     text-align: left;
-    color: black;
+    color: $color-black;
 }
 
 input, textarea {
@@ -228,14 +232,14 @@ input, textarea {
     padding: 10px;
     border: none;
     background-color: #111111;
-    color: white;
+    color: $color-white;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    border: 1px solid black;
+    border: 1px solid $color-black;
 }
 
 
