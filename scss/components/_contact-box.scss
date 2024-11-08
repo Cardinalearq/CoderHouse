@@ -1,0 +1,16 @@
+.cajas-contacto {
+    @include flex-mobile (center, center, column); 
+    margin: 20px; 
+    background-color: $background-color;
+    border-radius: 25px;
+
+    @include tablet (){
+        max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
+        width: 100%; /* Asegura que use el 100% del espacio disponible */
+        padding: 20px; /* agrega más espacio interno */
+    }
+
+    @include desktop(){
+        max-width: 700px; 
+    }
+}

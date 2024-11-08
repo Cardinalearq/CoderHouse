@@ -1,0 +1,138 @@
+$color-light: white;
+$color-dark: black;
+$background-color: rgba(241, 241, 241, 0.658);
+$button-color: rgba(255, 255, 255, 0.651);
+$redes: (
+    instagram: rgb(214, 130, 189),
+    facebook: rgb(88, 99, 199),
+    whatsapp: rgb(129, 201, 129)
+);
+
+@mixin css-reset ($margin:0, $padding:0, $box-sizing:border-box) {
+    margin: $margin;
+    padding: $padding;
+    box-sizing: border-box;
+}
+
+@mixin tablet(){
+    @media (min-width:576px){
+        @content;
+    }
+}
+
+@mixin pre-desktop(){
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+@mixin high-resolution(){
+    @media (min-width:1400px){
+        @content;
+    }
+}
+
+@mixin flex-mobile ($align-items, $text-align,$flex-direction: null, $justify-content: null) {
+    display: flex;
+    align-items: $align-items;
+    text-align: $text-align;
+    @if $flex-direction {
+        flex-direction: $flex-direction;
+    }
+    @if $justify-content {
+        justify-content: $justify-content;
+    }
+}
+
+* {
+    @include css-reset();
+}
+
+body {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.imagen-logo {
+    width: 5em;
+    margin: 15px;
+}
+
+main {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.imagen-logo-body {
+    padding: 50px 50px 50px 50px;
+    width: 60%;
+    text-align: center;
+
+    @include tablet(){
+        padding: 80px 50px 50px 50px;
+        width: 50%;
+        text-align: center;
+    }
+
+    @include desktop(){
+        padding: 80px 50px 50px 50px;
+        width: 30%;
+        text-align: center;
+    }
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    color: $color-light; 
+    text-align: center;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    text-shadow: 
+    -1px -1px 0 #81818156,  
+     1px -1px 0 #81818156,
+    -1px  1px 0 #81818156,
+     1px  1px 0 #81818156; 
+    
+    @include desktop(){
+        font-size: 80px;
+    }
+}
+
+h3 {
+    @extend h4;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: $color-light;
+    margin: 30px;
+}
+
+h5 {
+    color: $color-light;
+    margin: 10px;
+}
+
+h6 {
+    color: $color-light;
+    margin: 30px;
+    font-size: 15px;
+}
+
+p {
+    color: $color-dark;
+    margin: 10px; 
+    font-weight: 400;
+}

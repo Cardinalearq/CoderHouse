@@ -1,0 +1,88 @@
+form {
+    color: $color-light;
+}
+
+#formulario-contacto {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px;
+
+    @include tablet(){
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: auto; /* Centra el formulario */
+        width: 100%; /* Aumenta el ancho del formulario */
+        padding: 20px; /* Agrega más espacio alrededor del formulario */
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    color: $color-dark;
+
+    @include tablet(){
+        padding-top: 10px;
+
+        &:first-child {
+            padding-top: 0px;
+        }
+    }
+}
+
+input, textarea {
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+    @include tablet(){
+        width: 100%; /* Asegura que los inputs ocupen todo el ancho */
+        padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
+        font-size: 16px; /* Aumenta el tamaño de la fuente */
+    }
+}
+
+textarea {
+    @include tablet(){
+        height: 100px;
+    }
+
+    @include desktop(){
+        height: 140px;
+    }
+}
+
+.input-boton {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: none;
+    background-color: #111111;
+    color: $color-light;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+
+    @include tablet(){
+        margin-top: 20px;
+        width: 100%; /* El botón también ocupa todo el ancho */
+        padding: 15px; /* Aumenta el tamaño del botón */
+        font-size: 18px; /* Aumenta el tamaño de la fuente */
+    }
+
+    @include desktop(){
+        margin-top: 30px;
+    }
+}
+
+button:hover {
+    border: 1px solid $color-dark;
+}

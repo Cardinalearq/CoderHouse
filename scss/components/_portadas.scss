@@ -1,0 +1,47 @@
+.cajas-portadas {
+    @include flex-mobile (center, center, column);
+    margin: 20px; 
+    background-color: $background-color;
+    border-radius: 25px;
+
+    img {
+    width: 90%; 
+    height: auto; 
+    margin-top: 20px; 
+    border-radius: 25px;
+    }
+
+    @include tablet (){
+        max-width: 500px; /* Limita el ancho máximo del contenedor */
+    }
+
+    @include desktop(){
+        max-width: 500px; /* Limita el ancho máximo del contenedor */
+
+        img {
+            width: 90%; 
+            height: auto;
+        }
+    }
+}
+
+.titulos-portadas {
+    color: $color-light; 
+    font-size: 20px; 
+    margin: 10px 0; 
+
+    @include tablet(){
+        font-size: 25px;
+    }
+
+    @include desktop(){
+        font-size: 30px;
+    }
+}
+
+.titulos-portadas {
+    color: $color-dark !important;
+    font-size: 20px;
+    display: block;
+}
+

@@ -1,0 +1,23 @@
+.botones-ver-mas {
+    font-size: 13px; 
+    padding: 5px 10px; 
+    margin-bottom: 20px;
+    border-radius: 10px; 
+    border: none; 
+    color: rgba(0, 0, 0, 0.808); 
+    background-color: $button-color; 
+    cursor: pointer; 
+    transition: box-shadow 0.3s ease; 
+
+    &:hover {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
+    }
+
+    @include desktop(){
+        font-size: 18px;
+
+        &:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

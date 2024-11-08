@@ -1,0 +1,18 @@
+.carousel {
+    position: fixed; /* Fija el carrusel en la posición */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Altura de la ventana gráfica */
+    z-index: -1; /* Coloca el carrusel detrás de otros elementos */
+
+    .carousel-item {
+        height: 100vh; /* cada item ocupa toda la altura */  
+        
+        img {
+            object-fit: cover; /* Cubre el área del carrusel */
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
