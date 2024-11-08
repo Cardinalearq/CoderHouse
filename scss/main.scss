@@ -2,6 +2,11 @@ $color-light: white;
 $color-dark: black;
 $background-color: rgba(241, 241, 241, 0.658);
 $button-color: rgba(255, 255, 255, 0.651);
+$redes: (
+    instagram: rgb(214, 130, 189),
+    facebook: rgb(88, 99, 199),
+    whatsapp: rgb(129, 201, 129)
+);
 
 @mixin css-reset ($margin:0, $padding:0, $box-sizing:border-box) {
     margin: $margin;
@@ -184,6 +189,25 @@ p {
     color: $color-light;
     text-decoration: none;
     padding: 10px;
+}
+
+@each $red, $color in $redes {
+    .border-#{$red}{
+        border-bottom: 2px solid $color;
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -6px; 
+            height: 6px; 
+            background: $color;
+            box-shadow: 0 4px 8px $color; 
+            z-index: -1; 
+        }
+    }
 }
 
 form {
