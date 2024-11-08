@@ -75,6 +75,13 @@ main {
     width: 60%;
     text-align: center;
 
+    &:hover {
+        transform: rotateY(360deg);
+        transition-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+
     @include tablet(){
         padding: 80px 50px 50px 50px;
         width: 50%;

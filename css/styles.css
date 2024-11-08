@@ -26,6 +26,11 @@ main {
   width: 60%;
   text-align: center;
 }
+.imagen-logo-body:hover {
+  transform: rotateY(360deg);
+  transition-duration: 3s;
+  animation-fill-mode: forwards;
+}
 @media (min-width: 576px) {
   .imagen-logo-body {
     padding: 80px 50px 50px 50px;
