@@ -350,6 +350,10 @@ input, textarea {
   border: 1px solid #ccc;
   width: 100%;
 }
+input::placeholder, textarea::placeholder {
+  color: rgba(65, 65, 65, 0.2588235294);
+  font-style: italic;
+}
 @media (min-width: 576px) {
   input, textarea {
     width: 100%; /* Asegura que los inputs ocupen todo el ancho */
@@ -378,6 +382,9 @@ input, textarea {
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+}
+.input-boton:hover {
+  box-shadow: 1px 1px 10px black;
 }
 @media (min-width: 576px) {
   .input-boton {

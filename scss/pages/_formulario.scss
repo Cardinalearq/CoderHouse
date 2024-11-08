@@ -44,6 +44,11 @@ input, textarea {
     border: 1px solid #ccc;
     width: 100%;
 
+    &::placeholder{
+        color: #41414142;
+        font-style: italic;
+    }
+
     @include tablet(){
         width: 100%; /* Asegura que los inputs ocupen todo el ancho */
         padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
@@ -70,6 +75,10 @@ textarea {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+
+    &:hover {
+        box-shadow: 1px 1px 10px $color-dark;
+    }
 
     @include tablet(){
         margin-top: 20px;
