@@ -35,6 +35,16 @@ body {
   color: white !important;
   font-size: 1.2em;
 }
+@media (min-width: 992px) {
+  .nav-link {
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+    padding: 20px !important;
+  }
+  .nav-link:hover {
+    font-size: 1em;
+    transform: scale(1.2); /* Escala el texto en un 20% */
+  }
+}
 
 .carousel {
   position: fixed; /* Fija el carrusel en la posición */
@@ -68,6 +78,20 @@ main {
   width: 60%;
   text-align: center;
 }
+@media (min-width: 576px) {
+  .imagen-logo-body {
+    padding: 80px 50px 50px 50px;
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .imagen-logo-body {
+    padding: 80px 50px 50px 50px;
+    width: 30%;
+    text-align: center;
+  }
+}
 
 section {
   text-align: center;
@@ -80,6 +104,11 @@ h1 {
   vertical-align: middle;
   padding-bottom: 30px;
   text-shadow: -1px -1px 0 rgba(129, 129, 129, 0.337254902), 1px -1px 0 rgba(129, 129, 129, 0.337254902), -1px 1px 0 rgba(129, 129, 129, 0.337254902), 1px 1px 0 rgba(129, 129, 129, 0.337254902);
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 80px;
+  }
 }
 
 h3 {
@@ -140,11 +169,35 @@ form {
   margin-top: 20px;
   border-radius: 25px;
 }
+@media (min-width: 576px) {
+  .cajas-portadas {
+    max-width: 500px; /* Limita el ancho máximo del contenedor */
+  }
+}
+@media (min-width: 992px) {
+  .cajas-portadas {
+    max-width: 500px; /* Limita el ancho máximo del contenedor */
+  }
+  .cajas-portadas img {
+    width: 90%;
+    height: auto;
+  }
+}
 
 .titulos-portadas {
   color: white;
   font-size: 20px;
   margin: 10px 0;
+}
+@media (min-width: 576px) {
+  .titulos-portadas {
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  .titulos-portadas {
+    font-size: 30px;
+  }
 }
 
 .botones-ver-mas {
@@ -160,6 +213,18 @@ form {
 }
 .botones-ver-mas:hover {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 992px) {
+  .botones-ver-mas {
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(255, 255, 255, 0.651);
+  }
+  .botones-ver-mas:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .seccion-portadas {
@@ -180,12 +245,34 @@ form {
   background-color: rgba(241, 241, 241, 0.658);
   border-radius: 25px;
 }
+@media (min-width: 576px) {
+  .cajas-contacto {
+    max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
+    width: 100%; /* Asegura que use el 100% del espacio disponible */
+    padding: 20px; /* agrega más espacio interno */
+  }
+}
+@media (min-width: 992px) {
+  .cajas-contacto {
+    max-width: 700px;
+  }
+}
 
 #formulario-contacto {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin: 30px;
+}
+@media (min-width: 576px) {
+  #formulario-contacto {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto; /* Centra el formulario */
+    width: 100%; /* Aumenta el ancho del formulario */
+    padding: 20px; /* Agrega más espacio alrededor del formulario */
+  }
 }
 
 form {
@@ -199,12 +286,38 @@ label {
   text-align: left;
   color: black;
 }
+@media (min-width: 576px) {
+  label {
+    padding-top: 10px;
+  }
+  label:first-child {
+    padding-top: 0px;
+  }
+}
 
 input, textarea {
   padding-left: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
+}
+@media (min-width: 576px) {
+  input, textarea {
+    width: 100%; /* Asegura que los inputs ocupen todo el ancho */
+    padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
+  }
+}
+
+@media (min-width: 576px) {
+  textarea {
+    height: 100px;
+  }
+}
+@media (min-width: 992px) {
+  textarea {
+    height: 140px;
+  }
 }
 
 .input-boton {
@@ -217,6 +330,19 @@ input, textarea {
   border-radius: 5px;
   cursor: pointer;
 }
+@media (min-width: 576px) {
+  .input-boton {
+    margin-top: 20px;
+    width: 100%; /* El botón también ocupa todo el ancho */
+    padding: 15px; /* Aumenta el tamaño del botón */
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+  }
+}
+@media (min-width: 992px) {
+  .input-boton {
+    margin-top: 30px;
+  }
+}
 
 button:hover {
   border: 1px solid black;
@@ -226,100 +352,6 @@ footer {
   text-align: center;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0));
   padding: 20px 0; /* Espaciado dentro del footer */
-}
-
-@media (min-width: 576px) {
-  .imagen-logo-body {
-    padding: 80px 50px 50px 50px;
-    width: 50%;
-    text-align: center;
-  }
-  .cajas-portadas {
-    max-width: 500px; /* Limita el ancho máximo del contenedor */
-  }
-  .titulos-portadas {
-    font-size: 25px;
-  }
-  .cajas-contacto {
-    max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
-    width: 100%; /* Asegura que use el 100% del espacio disponible */
-    padding: 20px; /* agrega más espacio interno */
-  }
-  #formulario-contacto {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin: auto; /* Centra el formulario */
-    width: 100%; /* Aumenta el ancho del formulario */
-    padding: 20px; /* Agrega más espacio alrededor del formulario */
-  }
-  label {
-    padding-top: 10px;
-  }
-  label:first-child {
-    padding-top: 0px;
-  }
-  input, textarea {
-    width: 100%; /* Asegura que los inputs ocupen todo el ancho */
-    padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
-    font-size: 16px; /* Aumenta el tamaño de la fuente */
-  }
-  textarea {
-    height: 100px;
-  }
-  .input-boton {
-    margin-top: 20px;
-    width: 100%; /* El botón también ocupa todo el ancho */
-    padding: 15px; /* Aumenta el tamaño del botón */
-    font-size: 18px; /* Aumenta el tamaño de la fuente */
-  }
-}
-@media (min-width: 992px) {
-  .nav-link {
-    transition: transform 0.3s ease; /* Agrega una transición suave */
-    padding: 20px !important;
-  }
-  .nav-link:hover {
-    font-size: 1em;
-    transform: scale(1.2); /* Escala el texto en un 20% */
-  }
-  .imagen-logo-body {
-    padding: 80px 50px 50px 50px;
-    width: 30%;
-    text-align: center;
-  }
-  .titulos-portadas {
-    font-size: 30px;
-  }
-  .cajas-portadas {
-    max-width: 500px; /* Limita el ancho máximo del contenedor */
-  }
-  .cajas-portadas img {
-    width: 90%;
-    height: auto;
-  }
-  .botones-ver-mas {
-    font-size: 18px;
-    border-radius: 10px;
-    border: none;
-    color: rgba(0, 0, 0, 0.808);
-    background-color: rgba(255, 255, 255, 0.651);
-  }
-  .botones-ver-mas:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  }
-  h1 {
-    font-size: 80px;
-  }
-  .cajas-contacto {
-    max-width: 700px;
-  }
-  textarea {
-    height: 140px;
-  }
-  .input-boton {
-    margin-top: 30px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,30 @@
 $color-white: white;
 $color-black: black;
 
+@mixin tablet(){
+    @media (min-width:576px){
+        @content;
+    }
+}
+
+@mixin pre-desktop(){
+    @media (min-width:768px){
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media (min-width:992px){
+        @content;
+    }
+}
+
+@mixin high-resolution(){
+    @media (min-width:1400px){
+        @content;
+    }
+}
+
 
 * {
     margin: 0;
@@ -43,6 +67,16 @@ body {
         color: $color-white !important;
         font-size: 1.2em;
     }
+
+    @include desktop(){
+        transition: transform 0.3s ease; /* Agrega una transición suave */
+        padding: 20px !important;
+
+        &:hover {
+            font-size: 1em;
+            transform: scale(1.2); /* Escala el texto en un 20% */            
+        }
+    }
 }
 
 .carousel {
@@ -78,6 +112,18 @@ main {
     padding: 50px 50px 50px 50px;
     width: 60%;
     text-align: center;
+
+    @include tablet(){
+        padding: 80px 50px 50px 50px;
+        width: 50%;
+        text-align: center;
+    }
+
+    @include desktop(){
+        padding: 80px 50px 50px 50px;
+        width: 30%;
+        text-align: center;
+    }
 }
 
 section {
@@ -95,6 +141,10 @@ h1 {
      1px -1px 0 #81818156,
     -1px  1px 0 #81818156,
      1px  1px 0 #81818156; 
+    
+    @include desktop(){
+        font-size: 80px;
+    }
      
 }
 
@@ -166,12 +216,33 @@ form {
     margin-top: 20px; 
     border-radius: 25px;
     }
+
+    @include tablet (){
+        max-width: 500px; /* Limita el ancho máximo del contenedor */
+    }
+
+    @include desktop(){
+        max-width: 500px; /* Limita el ancho máximo del contenedor */
+
+        img {
+            width: 90%; 
+            height: auto;
+        }
+    }
 }
 
 .titulos-portadas {
     color: $color-white; 
     font-size: 20px; 
     margin: 10px 0; 
+
+    @include tablet(){
+        font-size: 25px;
+    }
+
+    @include desktop(){
+        font-size: 30px;
+    }
 }
 
 .botones-ver-mas {
@@ -188,6 +259,18 @@ form {
     &:hover {
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); 
     }
+
+    @include desktop(){
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        color: rgba(0, 0, 0, 0.808);
+        background-color: rgba(255, 255, 255, 0.651);
+
+        &:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
 }
 
 .seccion-portadas {
@@ -201,6 +284,16 @@ form {
     margin: 20px; 
     background-color: rgba(241, 241, 241, 0.658);
     border-radius: 25px;
+
+    @include tablet (){
+        max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
+        width: 100%; /* Asegura que use el 100% del espacio disponible */
+        padding: 20px; /* agrega más espacio interno */
+    }
+
+    @include desktop(){
+        max-width: 700px; 
+    }
 }
 
 #formulario-contacto {
@@ -208,6 +301,15 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin: 30px;
+
+    @include tablet(){
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: auto; /* Centra el formulario */
+        width: 100%; /* Aumenta el ancho del formulario */
+        padding: 20px; /* Agrega más espacio alrededor del formulario */
+    }
 }
 
 form {
@@ -220,6 +322,14 @@ label {
     font-weight: bold;
     text-align: left;
     color: $color-black;
+
+    @include tablet(){
+        padding-top: 10px;
+
+        &:first-child {
+            padding-top: 0px;
+        }
+    }
 }
 
 input, textarea {
@@ -227,6 +337,22 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     width: 100%;
+
+    @include tablet(){
+        width: 100%; /* Asegura que los inputs ocupen todo el ancho */
+        padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
+        font-size: 16px; /* Aumenta el tamaño de la fuente */
+    }
+}
+
+textarea {
+    @include tablet(){
+        height: 100px;
+    }
+
+    @include desktop(){
+        height: 140px;
+    }
 }
 
 .input-boton {
@@ -238,6 +364,19 @@ input, textarea {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+
+    @include tablet(){
+        margin-top: 20px;
+        width: 100%; /* El botón también ocupa todo el ancho */
+        padding: 15px; /* Aumenta el tamaño del botón */
+        font-size: 18px; /* Aumenta el tamaño de la fuente */
+    }
+
+    @include desktop(){
+        margin-top: 30px;
+    }
+
+
 }
 
 button:hover {
@@ -251,128 +390,5 @@ footer {
     padding: 20px 0; /* Espaciado dentro del footer */
 }
 
-@media (min-width: 576px) {
-
-    .imagen-logo-body {
-        padding: 80px 50px 50px 50px;
-        width: 50%;
-        text-align: center;
-    }
-
-    .cajas-portadas {
-        max-width: 500px; /* Limita el ancho máximo del contenedor */
-    }
-
-    .titulos-portadas {
-        font-size: 25px;
-    }
-
-    .cajas-contacto {
-        max-width: 500px; /* Aumenta el tamaño máximo de la caja del formulario */
-        width: 100%; /* Asegura que use el 100% del espacio disponible */
-        padding: 20px; /* agrega más espacio interno */
-    }
-
-    #formulario-contacto {
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        margin: auto; /* Centra el formulario */
-        width: 100%; /* Aumenta el ancho del formulario */
-        padding: 20px; /* Agrega más espacio alrededor del formulario */
-    }
-
-    label {
-        padding-top: 10px;
-    }
-
-    label:first-child {
-        padding-top: 0px;
-    }
-
-    input, textarea {
-        width: 100%; /* Asegura que los inputs ocupen todo el ancho */
-        padding: 15px; /* Aumenta el tamaño del padding dentro de los inputs */
-        font-size: 16px; /* Aumenta el tamaño de la fuente */
-    }
-
-    textarea {
-        height: 100px;
-    }
-
-    .input-boton {
-        margin-top: 20px;
-        width: 100%; /* El botón también ocupa todo el ancho */
-        padding: 15px; /* Aumenta el tamaño del botón */
-        font-size: 18px; /* Aumenta el tamaño de la fuente */
-    }
-}
-
-@media (min-width:992px) {
-
-    .nav-link {
-        transition: transform 0.3s ease; /* Agrega una transición suave */
-        padding: 20px !important;
-
-        &:hover {
-            font-size: 1em;
-            transform: scale(1.2); /* Escala el texto en un 20% */            
-        }
-    }
-
-    .imagen-logo-body {
-        padding: 80px 50px 50px 50px;
-        width: 30%;
-        text-align: center;
-    }
-
-    .titulos-portadas {
-        font-size: 30px;
-    }
-    
-    .cajas-portadas {
-        max-width: 500px; /* Limita el ancho máximo del contenedor */
-
-        img {
-            width: 90%; 
-            height: auto;
-        }
-    }
-    
-    .botones-ver-mas {
-        font-size: 18px;
-        border-radius: 10px;
-        border: none;
-        color: rgba(0, 0, 0, 0.808);
-        background-color: rgba(255, 255, 255, 0.651);
-
-        &:hover {
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-    }
-
-    h1 {
-        font-size: 80px;
-    }
-
-    .cajas-contacto {
-        max-width: 700px; 
-    }
-
-    textarea {
-        height: 140px;
-    }
-
-    .input-boton {
-        margin-top: 30px;
-    }  
-}
 
 
-@media (min-width: 768px) {
-     
-}
-
-@media (min-width: 1400px) {
-
-}
