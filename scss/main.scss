@@ -142,8 +142,8 @@ form {
     display: block;
 }
 
-@mixin flex-mobile ($display, $align-items, $text-align, $flex-direction: null, $justify-content: null) {
-    display: $display;
+@mixin flex-mobile ($align-items, $text-align, $flex-direction: null, $justify-content: null) {
+    display: flex;
     align-items: $align-items;
     text-align: $text-align;
     @if $flex-direction {
@@ -155,7 +155,7 @@ form {
 }
 
 .cajas-portadas {
-    @include flex-mobile (flex, center, center, column, null);
+    @include flex-mobile (center, center, column);
     margin: 20px; 
     background-color: rgba(241, 241, 241, 0.658);
     border-radius: 25px;
@@ -191,16 +191,13 @@ form {
 }
 
 .seccion-portadas {
-    @include flex-mobile (flex, center, center, null, center);
+    @include flex-mobile (center, center, null, center);
     flex-wrap: wrap;
     gap: 2px;
 }
 
 .cajas-contacto {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+    @include flex-mobile (center, center, column); 
     margin: 20px; 
     background-color: rgba(241, 241, 241, 0.658);
     border-radius: 25px;
