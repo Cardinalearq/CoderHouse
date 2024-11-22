@@ -9,8 +9,6 @@
     }
 }
 
-
-
 @each $red, $color in $redes {
     .border-#{$red}{
         border-bottom: 2px solid $color;
