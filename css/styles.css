@@ -124,7 +124,7 @@ p {
 }
 @media (min-width: 992px) {
   .nav-link {
-    transition: transform 0.3s ease; /* Agrega una transición suave */
+    transition: transform 0.3s ease; /* Transicion suave */
     padding: 20px !important;
   }
   .nav-link:hover {
@@ -231,6 +231,10 @@ p {
   color: white;
   text-decoration: none;
   padding: 10px;
+  transition: all 0.5s ease;
+}
+#enlaces-contacto > a:hover {
+  font-size: 18px;
 }
 
 .border-instagram {
@@ -247,11 +251,11 @@ p {
   background: rgb(214, 130, 189);
   box-shadow: 0 4px 8px rgb(214, 130, 189);
   z-index: -1;
-  transform: translateY(-2px); /* Inicia "escondido" */
-  transition: transform 0.3s ease; /* Duración y suavidad de la animación */
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
 }
 .border-instagram:hover::after {
-  transform: translateY(4px); /* Mueve hacia abajo al pasar el mouse */
+  transform: translateY(4px);
 }
 
 .border-facebook {
@@ -268,11 +272,11 @@ p {
   background: rgb(88, 99, 199);
   box-shadow: 0 4px 8px rgb(88, 99, 199);
   z-index: -1;
-  transform: translateY(-2px); /* Inicia "escondido" */
-  transition: transform 0.3s ease; /* Duración y suavidad de la animación */
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
 }
 .border-facebook:hover::after {
-  transform: translateY(4px); /* Mueve hacia abajo al pasar el mouse */
+  transform: translateY(4px);
 }
 
 .border-whatsapp {
@@ -289,11 +293,11 @@ p {
   background: rgb(129, 201, 129);
   box-shadow: 0 4px 8px rgb(129, 201, 129);
   z-index: -1;
-  transform: translateY(-2px); /* Inicia "escondido" */
-  transition: transform 0.3s ease; /* Duración y suavidad de la animación */
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
 }
 .border-whatsapp:hover::after {
-  transform: translateY(4px); /* Mueve hacia abajo al pasar el mouse */
+  transform: translateY(4px);
 }
 
 .cajas-contacto {

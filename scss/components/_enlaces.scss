@@ -2,7 +2,14 @@
     color: $color-light;
     text-decoration: none;
     padding: 10px;
+    transition: all 0.5s ease;
+
+    &:hover {
+        font-size: 18px; 
+    }
 }
+
+
 
 @each $red, $color in $redes {
     .border-#{$red}{
@@ -19,12 +26,12 @@
             background: $color;
             box-shadow: 0 4px 8px $color; 
             z-index: -1;
-            transform: translateY(-2px); /* Inicia "escondido" */
-            transition: transform 0.3s ease; /* Duración y suavidad de la animación */ 
+            transform: translateY(-2px); 
+            transition: transform 0.3s ease;  
         }
 
         &:hover::after {
-            transform: translateY(+4px); /* Mueve hacia abajo al pasar el mouse */
+            transform: translateY(+4px); 
         }
     }
 }

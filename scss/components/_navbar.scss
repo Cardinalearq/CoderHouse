@@ -29,7 +29,7 @@
     }
 
     @include desktop(){
-        transition: transform 0.3s ease; /* Agrega una transición suave */
+        transition: transform 0.3s ease; /* Transicion suave */
         padding: 20px !important;
 
         &:hover {
