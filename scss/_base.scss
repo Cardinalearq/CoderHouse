@@ -84,13 +84,11 @@ main {
     @include tablet(){
         padding: 80px 50px 50px 50px;
         width: 50%;
-        text-align: center;
     }
 
     @include desktop(){
         padding: 80px 50px 50px 50px;
         width: 30%;
-        text-align: center;
     }
 }
 
