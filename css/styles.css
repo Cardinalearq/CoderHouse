@@ -35,14 +35,12 @@ main {
   .imagen-logo-body {
     padding: 80px 50px 50px 50px;
     width: 50%;
-    text-align: center;
   }
 }
 @media (min-width: 992px) {
   .imagen-logo-body {
     padding: 80px 50px 50px 50px;
     width: 30%;
-    text-align: center;
   }
 }
 
