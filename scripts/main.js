@@ -6,7 +6,7 @@ function crearTarjetas () {
     do {
         nombre = prompt("Ingrese el nombre de la obra");
         if (!isNaN(nombre) || !nombre) {
-            alert("Debe completar el campo.");
+            alert("Por favor, ingrese un valor alfabetico.");
         }
     } while (!nombre);
 
