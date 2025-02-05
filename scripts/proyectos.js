@@ -4,7 +4,7 @@ const proyectos = [
         alt: 'vivienda-san-isidro',
         title: 'Vivienda San Isidro',
         link: '#',
-        m2: '250 m²',  
+        m2: '180 m²',  
         estilo: 'Moderno',
         estado: 'Terminado'
     },
@@ -13,7 +13,7 @@ const proyectos = [
         alt: 'vivienda-cañuelas-golf',
         title: 'Vivienda Cañuelas Golf',
         link: '#',
-        m2: '350 m²',
+        m2: '260 m²',
         estilo: 'Minimalista',
         estado: 'En construcción'
     },
@@ -23,7 +23,7 @@ const proyectos = [
         title: 'Vivienda Terralagos',
         link: '#',
         m2: '300 m²',
-        estilo: 'Rústico',
+        estilo: 'Moderno',
         estado: 'Terminado'
     },
     {
@@ -31,8 +31,8 @@ const proyectos = [
         alt: 'vivienda-cardales',
         title: 'Vivienda Cardales',
         link: '#',
-        m2: '400 m²',
-        estilo: 'Contemporáneo',
+        m2: '180 m²',
+        estilo: 'Minimalista',
         estado: 'En construcción'
     },
     {
@@ -40,8 +40,8 @@ const proyectos = [
         alt: 'vivienda-nordelta',
         title: 'Vivienda Nordelta',
         link: '#',
-        m2: '280 m²',
-        estilo: 'Moderno',
+        m2: '110 m²',
+        estilo: 'Minimalista',
         estado: 'Terminado'
     },
     {
@@ -49,8 +49,8 @@ const proyectos = [
         alt: 'vivienda-haras-del-sur',
         title: 'Vivienda Haras del Sur',
         link: '#',
-        m2: '320 m²',
-        estilo: 'Minimalista',
+        m2: '310 m²',
+        estilo: 'Clasico Moderno',
         estado: 'Terminado'
     }
 ];

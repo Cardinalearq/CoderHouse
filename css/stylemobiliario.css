@@ -17,7 +17,6 @@
     border: none;
 }
 
-
 @media screen and (max-width: 600px) {
   .card{
     width: 580px;
@@ -47,6 +46,7 @@
   backface-visibility: hidden;
   transition: 1s;
 }
+
 
 .front {
   transform: perspective(1000px) rotateY(0deg);
