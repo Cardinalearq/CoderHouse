@@ -1,0 +1,66 @@
+.modal {
+    display: none;
+    position: fixed; /* Cambié a fixed para que permanezca fijo al hacer scroll */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el tamaño del modal */
+    max-height: 80vh; /* Ajusta la altura máxima para que no se salga de la pantalla */
+    overflow-y: auto; /* Añade scroll en caso de que el contenido sea largo */
+    z-index: 100;
+    border-radius: 8px;
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .cantidad-control button {
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  .cart-item p {
+    margin: 5px 0;
+  }
+  
+  .cart-item .cantidad-control span {
+    font-weight: bold;
+  }
+  
+  .cart-item hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .styleCarrito {
+    color: black;
+  }

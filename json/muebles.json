@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "imagenes": [
+            "../imagenes/mobiliario/mesa_de_luz/1.png",
+            "../imagenes/mobiliario/mesa_de_luz/2.png",
+            "../imagenes/mobiliario/mesa_de_luz/3.png",
+            "../imagenes/mobiliario/mesa_de_luz/4.png",
+            "../imagenes/mobiliario/mesa_de_luz/5.jpg",
+            "../imagenes/mobiliario/mesa_de_luz/6.jpg"
+        ],
+        "titulo": "Mesa de Luz",
+        "linea": "Calabria",
+        "modelo": "Cosenza",
+        "alto": "50",
+        "ancho": "45",
+        "profundidad": "40",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Correderas telescopicas",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    },
+    {
+        "id": 2,
+        "imagenes": [
+            "../imagenes/mobiliario/rack_de_tv/1.png",
+            "../imagenes/mobiliario/rack_de_tv/2.png",
+            "../imagenes/mobiliario/rack_de_tv/3.png",
+            "../imagenes/mobiliario/rack_de_tv/4.png",
+            "../imagenes/mobiliario/rack_de_tv/5.jpg",
+            "../imagenes/mobiliario/rack_de_tv/6.jpg"
+        ],
+        "titulo": "Rack de TV",
+        "linea": "Calabria",
+        "modelo": "Cittanova",
+        "alto": "50",
+        "ancho": "150",
+        "profundidad": "40",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Bisagras de cazoleta - Correderas telescopicas",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    },
+    {
+        "id": 3,
+        "imagenes": [
+            "../imagenes/mobiliario/comoda/1.png",
+            "../imagenes/mobiliario/comoda/2.png",
+            "../imagenes/mobiliario/comoda/3.png",
+            "../imagenes/mobiliario/comoda/4.png",
+            "../imagenes/mobiliario/comoda/5.jpg",
+            "../imagenes/mobiliario/comoda/6.jpg"
+        ],
+        "titulo": "Comoda",
+        "linea": "Calabria",
+        "modelo": "Scalea",
+        "alto": "91",
+        "ancho": "130",
+        "profundidad": "40",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Correderas telescopicas",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    },
+    {
+        "id": 4,
+        "imagenes": [
+            "../imagenes/mobiliario/repisa/1.png",
+            "../imagenes/mobiliario/repisa/2.png",
+            "../imagenes/mobiliario/repisa/3.png",
+            "../imagenes/mobiliario/repisa/4.png",
+            "../imagenes/mobiliario/repisa/5.jpg",
+            "../imagenes/mobiliario/repisa/6.jpg"
+        ],
+        "titulo": "Repisa",
+        "linea": "Calabria",
+        "modelo": "Cetraro",
+        "alto": "91",
+        "ancho": "60",
+        "profundidad": "20",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Sin herrajes",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    },
+    {
+        "id": 5,
+        "imagenes": [
+            "../imagenes/mobiliario/vajillero/1.png",
+            "../imagenes/mobiliario/vajillero/2.png",
+            "../imagenes/mobiliario/vajillero/3.png",
+            "../imagenes/mobiliario/vajillero/4.png",
+            "../imagenes/mobiliario/vajillero/5.jpg",
+            "../imagenes/mobiliario/vajillero/6.jpg"
+        ],
+        "titulo": "Vajillero",
+        "linea": "Calabria",
+        "modelo": "Luzzi",
+        "alto": "91",
+        "ancho": "150",
+        "profundidad": "40",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Bisagras de cazoleta - Correderas telescopicas",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    },
+    {
+        "id": 6,
+        "imagenes": [
+            "../imagenes/mobiliario/respaldo_de_cama/1.png",
+            "../imagenes/mobiliario/respaldo_de_cama/2.png",
+            "../imagenes/mobiliario/respaldo_de_cama/3.png",
+            "../imagenes/mobiliario/respaldo_de_cama/4.png",
+            "../imagenes/mobiliario/respaldo_de_cama/5.jpg",
+            "../imagenes/mobiliario/respaldo_de_cama/6.jpg"
+        ],
+        "titulo": "Respaldo de cama",
+        "linea": "Calabria",
+        "modelo": "Corigliano",
+        "alto": "80",
+        "ancho": "240/260/300",
+        "profundidad": "40",
+        "materialidad": "Melamina sobre MDF",
+        "cantos": "Cantos ABS 45mm",
+        "herrajes": "Correderas telescopicas",
+        "colores": "Blanco o Gris grafito, con Olmo Finlandes",
+        "precio": 80000
+    }
+]
