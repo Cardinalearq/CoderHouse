@@ -68,7 +68,7 @@ function createMuebles(data) {
                 <div class="containercaja">
                     <div class="cajaproducto">
                         <div class="cajatextos">
-                            <div class="precio">${cards.precio}</div>
+                            <div class="precio">$${cards.precio.toLocaleString("es-AR")}</div>
                             <button class="boton-cerrar">✖️​</button>
                             <div class="tituloproducto"><b>${cards.titulo}</b></div>
                             <div class="modeloproducto">Linea: <b>${cards.linea}</b> - Modelo: <b>${cards.modelo}</b></div>
@@ -152,8 +152,27 @@ function createMuebles(data) {
     
         let buttonAddToCart = document.getElementById("botonAgregarCarrito-" + cards.id);
         
-        buttonAddToCart.addEventListener("click", function() {
-            addToCart(cards);  // Agregar el producto al carrito
+        buttonAddToCart.addEventListener("click", function () {
+            addToCart(cards); // Agrego el producto al carrito
+            // Agrego alerta de SweetAlert
+            Swal.fire({
+                title: "Agregado al carrito",
+                text: "Selecciona el carrito para ver tus productos",
+                icon: "success",
+                confirmButtonText: "Aceptar",
+                cancelButtonText: "Ir al carrito",
+                showCancelButton: true,
+            }).then((result) => {
+                if (result.dismiss === Swal.DismissReason.cancel) {
+                    let carritoModal = document.getElementById("carritoModal"); 
+                    // Verifico si el carrito ya está abierto
+                    let CarritoAbierto = carritoModal.classList.contains("show") || carritoModal.style.display === "block";
+                    // si esta cerrado, lo abro.
+                    if (!CarritoAbierto) {
+                        document.getElementById("carritoBtn").click(); 
+                    }
+                }
+            });
         });
     });
     
@@ -181,7 +200,7 @@ function renderCart() {
     let totalGeneral = 0;
 
     carrito.forEach(item => {
-        // Calcular subtotal para cada producto
+        // Calculo subtotal para cada producto
         let totalPorProducto = item.cantidad * item.precio;
         totalGeneral += totalPorProducto;
 

@@ -19,7 +19,7 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Correderas telescopicas",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 60000
     },
     {
         "id": 2,
@@ -41,7 +41,7 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Bisagras de cazoleta - Correderas telescopicas",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 280000
     },
     {
         "id": 3,
@@ -63,7 +63,7 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Correderas telescopicas",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 320000
     },
     {
         "id": 4,
@@ -85,7 +85,7 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Sin herrajes",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 45000
     },
     {
         "id": 5,
@@ -107,7 +107,7 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Bisagras de cazoleta - Correderas telescopicas",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 310000
     },
     {
         "id": 6,
@@ -129,6 +129,6 @@
         "cantos": "Cantos ABS 45mm",
         "herrajes": "Correderas telescopicas",
         "colores": "Blanco o Gris grafito, con Olmo Finlandes",
-        "precio": 80000
+        "precio": 380000
     }
 ]
