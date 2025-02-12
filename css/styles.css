@@ -323,16 +323,16 @@ b {
 
 .modal {
   display: none;
-  position: fixed; /* Cambié a fixed para que permanezca fijo al hacer scroll */
-  top: 20px; /* Ajusta la distancia desde la parte superior */
-  right: 20px; /* Ajusta la distancia desde la derecha */
+  position: fixed;
+  top: 20px;
+  right: 20px;
   background: white;
   border: 1px solid #ccc;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Ajusta el tamaño del modal */
-  max-height: 80vh; /* Ajusta la altura máxima para que no se salga de la pantalla */
-  overflow-y: auto; /* Añade scroll en caso de que el contenido sea largo */
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
   z-index: 100;
   border-radius: 8px;
 }
@@ -386,6 +386,20 @@ b {
 
 .styleCarrito {
   color: black;
+  font-size: 1.8rem;
+}
+
+.confirmarCompra {
+  display: none;
+  margin: 1.8rem;
+  background-color: rgb(42, 179, 42);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.confirmarCompra:hover {
+  background-color: rgb(50, 214, 50);
+  border: 1px solid #ddd;
 }
 
 .seccion-portadas {

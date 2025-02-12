@@ -65,3 +65,17 @@
     color: black;
     font-size: 1.8rem;
   }
+
+  .confirmarCompra{
+    display: none;
+    margin: 1.8rem;
+    background-color: rgb(42, 179, 42);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+  }
+
+  .confirmarCompra:hover{
+    background-color: rgb(50, 214, 50);
+    border: 1px solid #ddd;
+  }

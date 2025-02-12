@@ -151,9 +151,16 @@ function createMuebles(data) {
         setEventosVisualizacion();
     
         let buttonAddToCart = document.getElementById("botonAgregarCarrito-" + cards.id);
-        
+
         buttonAddToCart.addEventListener("click", function () {
             addToCart(cards); // Agrego el producto al carrito
+            
+            // Cambio display: none; a display: block; para el botón "Finalizar compra"
+            let botonFinalizarCompra = document.querySelector(".confirmarCompra");
+            if (botonFinalizarCompra) {
+                botonFinalizarCompra.style.display = "block";  // Cambiar el estilo a display:block
+            }
+        
             // Agrego alerta de SweetAlert
             Swal.fire({
                 title: "Agregado al carrito",
@@ -174,6 +181,7 @@ function createMuebles(data) {
                 }
             });
         });
+        
     });
     
     document.getElementById("carritoBtn").addEventListener("click", toggleCarrito);
@@ -183,16 +191,18 @@ function toggleCarrito() {
     let modal = document.getElementById("carritoModal");
     modal.style.display = modal.style.display === "block" ? "none" : "block";
     if (modal.style.display === "block") {
-        renderCart(); // Actualiza el carrito cuando se abre el modal
+        renderCart(); // Actualizo el carrito cuando se abre el modal
     }
 }
 
 function renderCart() {
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     let cartContainer = document.getElementById("cartContainer");
+    let botonFinalizarCompra = document.querySelector(".confirmarCompra");
 
     if (carrito.length === 0) {
         cartContainer.innerHTML = "<p>El carrito está vacío.</p>";
+        botonFinalizarCompra.style.display = "none"; //oculto el boton de "Finalizar compra"
         return;
     }
 
@@ -227,7 +237,10 @@ function renderCart() {
     let totalElement = document.createElement("p");
     totalElement.innerHTML = `<strong>Total: $${totalGeneral.toLocaleString()}</strong>`;
     cartContainer.appendChild(totalElement);
+    botonFinalizarCompra.style.display = "block"; //agrego el boton de "Finalizar compra"
+
 }
+
 
 
 function addToCart(newCard) {
