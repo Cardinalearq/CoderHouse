@@ -174,20 +174,26 @@
     flex-direction: row;
     padding-top: 5px;
     justify-content: space-between;
-    
-  }
+    align-items: center;
+}
 
-  .boton-izquierdo {
-    display: flex;
-  }
 
-  .boton-derecho {
-    margin-left: auto;
-  }
+.boton-izquierdo {
+  display: flex;
+  align-items: center; 
+}
 
-  .cajaboton {
-    margin-right: 10px;
-  }
+.boton-derecho {
+  margin-left: auto;
+  display: flex;
+  align-items: center; 
+}
+
+.cajaboton {
+  margin-right: 10px;
+  display: flex;
+  align-items: center; 
+}
 
   @media screen and (max-width: 500px) {
     .cajaboton{
@@ -231,12 +237,18 @@
     cursor: pointer;
     border: 1px solid rgba(0,0,0,0.3);
     box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-    font-style: bold;
     font-family: 'Maven Pro', sans-serif; 
     min-height: 45px;
     max-height: 45px;
-    justify-items: center;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
 
   @media screen and (max-width: 600px) {
     .botonproducto{
@@ -255,14 +267,18 @@
   .botonproducto:hover{
     color: white;
     background-color: rgb(100,100,100);
-  }
+}
 
-  .container-botones .boton-derecho .cajaboton button.botonproducto {
-    background-color: rgb(57, 167, 90);
-    color: white;
-    border: none;
-    box-shadow: none;
-  }
+.container-botones .boton-derecho .cajaboton button.botonproducto {
+  background-color: rgb(57, 167, 90);
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+.container-botones .boton-derecho .cajaboton button.botonproducto:hover {
+  background-color: rgb(63, 182, 98);
+}
 
   .cajaboton{
     padding: 15px;
@@ -389,7 +405,6 @@
   .precio{
     font-size: 15px;
     margin-top: 370px;
-    margin-left: 190px;
   }
 }
 
