@@ -172,7 +172,7 @@ function createMuebles(data) {
             }).then((result) => {
                 if (result.dismiss === Swal.DismissReason.cancel) {
                     let carritoModal = document.getElementById("carritoModal"); 
-                    // Verifico si el carrito ya está abierto
+                    // Verifico si el carrito ya esta abierto
                     let CarritoAbierto = carritoModal.classList.contains("show") || carritoModal.style.display === "block";
                     // si esta cerrado, lo abro.
                     if (!CarritoAbierto) {
@@ -181,6 +181,23 @@ function createMuebles(data) {
                 }
             });
         });
+
+        // Funcion click en el boton para confirmar compra.
+        document.querySelector(".confirmarCompra").addEventListener("click", function () {
+        // Vaciar el carrito en localStorage
+        localStorage.setItem("carrito", JSON.stringify([]));
+    
+        // Muestro alerta
+        Swal.fire({
+            title: "Compra realizada con éxito",
+            text: "Tu compra ha sido procesada. ¡Gracias por confiar en nosotros!",
+            icon: "success",
+            confirmButtonText: "Aceptar"
+        }).then(() => {
+            renderCart(); 
+        });
+});
+
         
     });
     
@@ -240,8 +257,6 @@ function renderCart() {
     botonFinalizarCompra.style.display = "block"; //agrego el boton de "Finalizar compra"
 
 }
-
-
 
 function addToCart(newCard) {
     let currentCart = localStorage.getItem("carrito");
