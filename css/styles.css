@@ -134,7 +134,7 @@ b {
   text-align: center;
   flex-direction: column;
   margin: 20px;
-  background-color: rgba(241, 241, 241, 0.658);
+  background-color: rgba(241, 241, 241, 0.74);
   border-radius: 25px;
   overflow: hidden;
 }
@@ -211,14 +211,16 @@ b {
   transition: box-shadow 0.3s ease;
 }
 .botones-ver-mas:hover {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(122, 122, 122, 0.76);
 }
 @media (min-width: 992px) {
   .botones-ver-mas {
     font-size: 18px;
   }
   .botones-ver-mas:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+    border: 1px solid rgba(122, 122, 122, 0.76);
   }
 }
 
@@ -305,7 +307,7 @@ b {
   text-align: center;
   flex-direction: column;
   margin: 20px;
-  background-color: rgba(241, 241, 241, 0.658);
+  background-color: rgba(241, 241, 241, 0.74);
   border-radius: 25px;
 }
 @media (min-width: 576px) {
