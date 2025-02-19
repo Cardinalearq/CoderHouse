@@ -214,6 +214,20 @@
     padding: .07rem;
 }
 
+/* agregado_____________ */
+
+.slider-indicators>*:hover,
+.slider-indicators>*:focus {
+    border: .4rem solid transparent;
+
+}
+
+.slider-indicators>button:hover {
+    background-color: #505050f5;
+}
+
+/* _____________________ */
+
 .slider-nav {
     position: absolute;
     top: 0;
